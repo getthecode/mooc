@@ -1,1 +1,1 @@
-Rooms = new Meteor.Collection('posts');
+Rooms = new Meteor.Collection('messages');
