@@ -4,6 +4,6 @@ Router.configure({
 Router.map(function() { 
 	this.route('roomx', {path: '/'});
 	this.route('create', {path: '/create-new'});
-	this.route('all-rooms', {path: '/all_rooms'})
+	this.route('roomx1', {path: '/all_rooms'});
 	
 });

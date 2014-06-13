@@ -1,1 +1,1 @@
-Room = new Meteor.Collection('rooms');
+Rooms = new Meteor.Collection('rooms');

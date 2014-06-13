@@ -4,7 +4,7 @@ e.preventDefault();
 var room = {
 room: $(e.target).find('[name=room]').val(),
 }
-room._id = Room.insert(room);
+room._id = Rooms.insert(room);
 Router.go('all-rooms', room);
 }
 });
