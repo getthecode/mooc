@@ -1,10 +1,11 @@
 Template.create.events({
-'submit form': function(e) {
+'submit form': function(e, tmpl) {
 e.preventDefault();
-var room = {
-room: $(e.target).find('[name=room]').val(),
-}
-Rooms.insert(room);
+var newRoom = {
+            title: tmpl.find("#room").value
+            
+        };
+room._id = Rooms.insert(newroom);
 
 }
 });
