@@ -1,11 +1,14 @@
-Template.create.events({
-'submit form': function(e, tmpl) {
+Template.roomList.events({
+'submit form': function(e) {
 e.preventDefault();
-var newRoom = {
-            title: tmpl.find("#room").value
-            
-        };
-room._id = Rooms.insert(newroom);
+var room = {
+title: $(e.target).find('[name=roomname]').val(),
+title: $(e.target).find('[name=nickname]').val()
+
+}
+room._id = Rooms.insert(room);
+Router.go('roomx1', room);
+
 
 }
 });
