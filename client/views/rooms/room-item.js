@@ -13,3 +13,7 @@ var rooms = [
 Template.room.helpers({
   room: rooms[0]
 });
+
+Template.roomList.helpers({
+  rooms: rooms
+});
